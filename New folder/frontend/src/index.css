@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 16% 92%;
+    --muted-foreground: 215 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222 14% 10%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 16% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 16% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 140 65% 45%;
+    --success-foreground: 140 100% 95%;
+
+    --warning: 40 89% 58%;
+    --warning-foreground: 201 100% 10%;
+
+    --danger: 0 85% 55%;
+    --danger-foreground: 0 0% 100%;
+
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.75rem;
+
+    --shadow-sm: 0 5px 10px -5px rgba(15, 23, 42, 0.15);
+    --shadow: 0 20px 25px -15px rgba(15, 23, 42, 0.2);
+    --shadow-lg: 0 25px 40px -20px rgba(15, 23, 42, 0.28);
+  }
+
+  .dark {
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    --card: 222.2 47.4% 11.2%;
+    --card-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+
+    --primary: 210 36% 96%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 36% 96%;
+
+    --accent: 222.2 47.4% 11.2%;
+    --accent-foreground: 210 36% 96%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 140 65% 55%;
+    --success-foreground: 140 100% 10%;
+
+    --warning: 40 89% 60%;
+    --warning-foreground: 201 100% 10%;
+
+    --danger: 0 72% 50%;
+    --danger-foreground: 0 0% 100%;
+
+    --ring: 210 36% 96%;
+
+    --shadow-sm: 0 5px 10px -5px rgba(15, 23, 42, 0.35);
+    --shadow: 0 15px 30px -10px rgba(15, 23, 42, 0.45);
+    --shadow-lg: 0 25px 45px -15px rgba(15, 23, 42, 0.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .btn-transition {
+    @apply transition-all duration-200 ease-out;
+  }
+}
